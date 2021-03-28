@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.img {
+.header__img {
   width: 100%;
 }
-.more-info {
+.header__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -29,13 +29,13 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task,
-.label-task {
+.main-block__task,
+.main-block__label-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-wrapper {
+.main-block__task-wrapper {
   display: flex;
 }
 #incomplete-tasks,
@@ -43,10 +43,10 @@
   margin: 0;
   padding: 0px;
 }
-.item {
+.main-block__item {
   list-style: none;
 }
-.btn {
+.main-block__btn {
   background: none;
   border: 0px;
   color: #888;
@@ -56,11 +56,11 @@
   cursor: pointer;
   outline: none;
 }
-.btn:hover {
+.main-block__btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
-.subtitle {
+.main-block__subtitle {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -69,7 +69,7 @@
   margin: 0;
   text-transform: uppercase;
 }
-.input-text {
+.main-block__input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,12 +82,12 @@
   color: #888;
   outline: none;
 }
-.input-text:focus {
+.main-block__input-text:focus {
   color: #333;
 }
 
 /* New Task */
-#add-task .subtitle {
+#add-task .main-block__subtitle {
   display: block;
   margin: 0 0 20px;
 }
@@ -95,12 +95,12 @@
   width: 318px;
   outline: none;
 }
-.btn-add:hover {
+.main-block__btn_add:hover {
   color: #0fc57c;
 }
 
 /* Task list */
-.item {
+.main-block__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,47 +108,47 @@
   justify-content: space-between;
   align-items: center;
 }
-.input-checkbox {
+.main-block__input-checkbox {
   margin: 0 10px;
   outline: none;
 }
-.item>.label-task {
+.main-block__item>.main-block__label-task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.item>.input-text {
+.main-block__item>.main-block__input-text {
   width: 226px;
 }
-.item>.btn.btn-del:hover {
+.main-block__item>.main-block__btn.main-block__btn_del:hover {
   color: #cf2323;
 }
-.btn-img {
+.main-block__btn_img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn-img:hover {
+.main-block__btn_img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .label-task {
+#completed-tasks .main-block__label-task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.item .input-text {
+.main-block__item .main-block__input-text {
   display: none;
 }
 
-.edit-mode .input-text {
+.main-block__edit-mode .main-block__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .label-task {
+.main-block__edit-mode .main-block__label-task {
   display: none;
 }
